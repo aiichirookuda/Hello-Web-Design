@@ -1,0 +1,260 @@
+@charset 'utf-8';
+
+@media screen and (max-width: 768px) {
+  .inner {
+    width: auto;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  /* ヘッダー */
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    z-index: 150;
+  }
+
+  header .inner.flex {
+    display: flex;
+  }
+
+  /* ナビ */
+
+  .mainNav {
+    display: none;
+    top: 70px;
+  }
+
+  .mainNav ul {
+    writing-mode: horizontal-tb;
+  }
+
+  .menu-trigger,
+  .menu-trigger span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .menu-trigger {
+    position: relative;
+    right: 20px;
+    width: 50px;
+    height: 44px;
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .menu-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 20px;
+  }
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  /* menu動き */
+  .menu-trigger span {
+    left: 8px;
+    width: 42px;
+  }
+  .menu-trigger span::before {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .menu-trigger.active span {
+    left: 0;
+    width: 100%;
+  }
+  .menu-trigger.active span::before {
+    content: none;
+  }
+  .menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(20px) rotate(-45deg);
+  }
+  .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-20px) rotate(45deg);
+  }
+
+  /* メインビジュアル */
+  .mainVisual {
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .mainVisual .bg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .mainVisual p {
+    position: absolute;
+    left: 10px;
+    bottom: 160px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .mainVisual figure {
+    position: absolute;
+  }
+
+  .mainVisual #slide {
+    height: 100vh;
+  }
+
+  .mainVisual img {
+    height: 100vh;
+  }
+
+  #button {
+    display: none;
+  }
+
+  /* main */
+  main {
+    padding: 0 20px;
+  }
+
+  /* ぼうけんのきろく */
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+
+  .blog h2 {
+    margin-bottom: 20px;
+  }
+
+  .blog img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .blog dl {
+    width: auto;
+  }
+
+  .blog dl dt {
+    float: none;
+  }
+
+  .blog dl dd {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .shop {
+    padding: 0;
+  }
+
+  .shop .items.flex {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  .shop .item {
+    width: 150px;
+  }
+
+  .shop .item .small {
+    width: 100px;
+  }
+
+  /* ステータス */
+  .status {
+    width: 100%;
+    padding: 0;
+  }
+
+  .status h2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .status h3 {
+    margin-bottom: 10px;
+  }
+
+  .status ul {
+    padding-left: 2em;
+  }
+
+  .status ul ul {
+    padding-left: 0;
+  }
+
+  .status .equipment {
+    padding: 75px 60px 0;
+  }
+
+  .status .equipment li {
+    margin-bottom: 0px;
+  }
+
+  .status .right {
+    width: 100%;
+  }
+
+  .status .like ul,
+  .status .skill .box {
+    width: 100%;
+  }
+
+  .status .like ul ul,
+  .status .skill ul {
+    width: 100%;
+  }
+
+  .status div.icon {
+    display: flex;
+  }
+
+  .status .top {
+    padding: 20px 60px;
+  }
+
+  .status .right {
+    border-left: none;
+    padding: 35px 60px;
+  }
+
+  .skill .box ul {
+    margin-bottom: 0;
+  }
+
+  /* フッター */
+  footer .inner {
+    width: 100%;
+  }
+}

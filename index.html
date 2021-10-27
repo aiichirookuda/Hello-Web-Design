@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>Hello, Web Design.</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <h1><img src="./images/logo.png" alt="HELLO, WEB DESIGN." /></h1>
+        <button class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="mainNav flex">
+        <ul class="flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">HTML&CSS</a></li>
+          <li><a href="#">Ai&Ps</a></li>
+          <li><a href="#">WebFlow</a></li>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="./works/index.html">Works</a></li>
+          <li class="insta">
+            <a href="#"
+              ><img src="./images/icon_insta_w.png" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mainVisual flex inner">
+      <div class="bg">
+        <p class="fadeIn">
+          『◯◯…、きこえますか、◯◯…。<br />
+          <br />
+          いま、あなたのこころに直接語りかけています。<br />
+          WEBのちからをおそれることはありません。<br />
+          これからの修行をのりこえ、<br />
+          WEBのちからで、共に世界を救いましょう。<br />
+          <br /><span class="big">ようこそ、<br />WEBデザインの世界へ。</span>
+          』
+        </p>
+      </div>
+      <figure>
+        <ul id="slide">
+          <li>
+            <img src="./images/main_visual.jpg" alt="img1" />
+          </li>
+          <li>
+            <img src="./images/main_visual02.jpg" alt="img2" />
+          </li>
+          <li>
+            <img src="./images/main_visual03.jpg" alt="img3" />
+          </li>
+        </ul>
+        <div id="button">
+          <ul class="flex">
+            <li><a href="#" class="target">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </div>
+      </figure>
+    </div>
+    <main class="inner">
+      <section class="blog flex">
+        <h2 class="sp">ぼうけんのきろく</h2>
+        <figure>
+          <img src="./images/blog.jpg" alt="ぼうけんのきろく写真" />
+        </figure>
+        <div>
+          <h2 class="pc">ぼうけんのきろく</h2>
+          <dl>
+            <dt>2021.08.11</dt>
+            <dd>ちゅうかんしれんがあらわれた！</dd>
+            <dt>2021.08.03</dt>
+            <dd>illustratorでかくうの広告をつくった！</dd>
+            <dt>2021.07.15</dt>
+            <dd>flexをおぼえた！</dd>
+            <dt>2021.07.01</dt>
+            <dd>わせだでんしITきょういくセンターにたどりついた！</dd>
+          </dl>
+        </div>
+      </section>
+      <section class="shop">
+        <h2>どうぐ屋</h2>
+        <div class="items flex">
+          <div class="item">
+            <img src="./images/item01.png" alt="パソコン" />
+            <p>パソコン</p>
+            <p class="small">ひっすそうび</p>
+            <p>￥200,000</p>
+          </div>
+          <div class="item">
+            <img src="./images/item02.png" alt="HTML&CSSのしょ" />
+            <p>HTMLとCSSのしょ</p>
+            <p class="small">コーディング力があがる</p>
+            <p>￥2,750</p>
+          </div>
+          <div class="item">
+            <img src="./images/item03.png" alt="AiとPsのしょ" />
+            <p>AiとPsのしょ</p>
+            <p class="small">デザイン力があがる</p>
+            <p>￥1,755</p>
+          </div>
+          <div class="item">
+            <img src="./images/item04.png" alt="エナドリ" />
+            <p>エナドリ</p>
+            <p class="small">いちじてきに体力がかいふくする</p>
+            <p>￥200</p>
+          </div>
+          <div class="item">
+            <img src="./images/item05.png" alt="あんみんまくら" />
+            <p>あんみんまくら</p>
+            <p class="small">すいみんぶそくはてき</p>
+            <p>￥6,600</p>
+          </div>
+          <div class="item">
+            <img src="./images/item06.png" alt="たのしむきもち" />
+            <p>たのしむきもち</p>
+            <p class="small">いちばんだいじかも</p>
+            <p>￥0</p>
+          </div>
+          <div class="item">
+            <img src="./images/item07.png" alt="エッチなしたぎ" />
+            <p>エッチなしたぎ</p>
+            <p class="small">おもわずみとれるほどセクシー</p>
+            <p>￥4,125</p>
+          </div>
+        </div>
+      </section>
+      <section class="status">
+        <h2>ステータス</h2>
+        <div class="container">
+          <div class="top flex">
+            <p>あいいちろう</p>
+            <p>WEBデザインを学ぶ者</p>
+          </div>
+          <div class="flex">
+            <div class="left">
+              <div class="icon flex">
+                <img src="./images/icon_status.png" alt="アイコン" />
+                <div>
+                  <ul>
+                    <li class="Lv">Lv28</li>
+                    <li class="HPnum">HP 100</li>
+                    <li class="HPbar"></li>
+                    <li class="MPnum">MP 50</li>
+                    <li class="MPbar"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="equipment">
+                <ul>
+                  <li>E パソコン</li>
+                  <li>E ぬののふく</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div class="like flex">
+                <h3>すきなもの</h3>
+                <ul class="flex">
+                  <li>
+                    <p>おんがく</p>
+                    <ul>
+                      <li>エレクトロ</li>
+                      <li>エレクトロニカ</li>
+                      <li>ロック</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>ゲーム</p>
+                    <ul>
+                      <li>RPG</li>
+                      <li>FPS/TPS</li>
+                      <li>アクション</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>えいが</p>
+                    <ul>
+                      <li>SF</li>
+                      <li>アクション</li>
+                      <li>ヒューマンドラマ</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="skill flex">
+                <h3>スキル</h3>
+                <div class="box flex">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                  <ul>
+                    <li>jQuery</li>
+                    <li>illustrator</li>
+                    <li>Photoshop</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="witIt inner">
+        <a href="https://www.wit-it.co.jp/"
+          ><img src="./images/logo_witit.png" alt="witit" width="100"
+        /></a>
+      </p>
+    </main>
+    <footer>
+      <div class="inner flex">
+        <p>CopyRights &copy; Aiichiro.</p>
+        <img src="./images/icon_footer.png" alt="アイコン" />
+        <p>All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
